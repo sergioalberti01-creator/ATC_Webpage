@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Club ATC Montréal</title>
+  <meta name="description" content="Découvrez les cartes artistiques créées par les élèves du Club ATC Montréal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="gallery">
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-badge" aria-hidden="true">ATC</div>
+        <span data-fr="Club ATC Montréal" data-en="ATC Club Montréal">Club ATC Montréal</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html"   data-page="home"    data-fr="Accueil" data-en="Home">Accueil</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="schools.html" data-page="schools" data-fr="Écoles"  data-en="Schools">Écoles</a></li>
+        <li><a href="contact.html" data-page="contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Changer de langue / Switch language">EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <header class="page-header">
+    <div class="container">
+      <h1 data-fr="Galerie des cartes" data-en="Card Gallery">Galerie des cartes</h1>
+      <p data-fr="Explorez les œuvres créées par nos artistes élèves" data-en="Explore artworks created by our student artists">Explorez les œuvres créées par nos artistes élèves</p>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container section">
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+      <p class="filter-label" data-fr="Filtrer par école" data-en="Filter by school">Filtrer par école</p>
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all" data-fr="Tous / Toutes" data-en="All">Tous / Toutes</button>
+        <button class="filter-btn" data-filter="jeanne-mance" data-fr="Jeanne-Mance" data-en="Jeanne-Mance">Jeanne-Mance</button>
+        <button class="filter-btn" data-filter="mont-royal" data-fr="Mont-Royal" data-en="Mont-Royal">Mont-Royal</button>
+        <button class="filter-btn" data-filter="pierre-laporte" data-fr="Pierre-Laporte" data-en="Pierre-Laporte">Pierre-Laporte</button>
+        <button class="filter-btn" data-filter="northview" data-fr="Northview" data-en="Northview">Northview</button>
+        <button class="filter-btn" data-filter="edouard-montpetit" data-fr="Édouard-Montpetit" data-en="Édouard-Montpetit">Édouard-Montpetit</button>
+        <button class="filter-btn" data-filter="west-island" data-fr="West Island" data-en="West Island">West Island</button>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="gallery-grid" role="grid" aria-label="Grille de cartes artistiques">
+      <!-- populated by JS -->
+    </div>
+
+  </main>
+
+  <!-- ========== LIGHTBOX ========== -->
+  <div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+    <div class="lightbox-box">
+      <div class="lightbox-art" id="lb-art" aria-hidden="true"></div>
+      <div class="lightbox-info">
+        <button class="lightbox-close" id="lb-close" aria-label="Fermer la modale">×</button>
+        <h2 class="lightbox-title" id="lb-title"></h2>
+        <div class="lightbox-meta">
+          <p><strong data-fr="École" data-en="School">École</strong>: <span id="lb-school"></span></p>
+          <p><strong data-fr="Niveau" data-en="Grade">Niveau</strong>: <span id="lb-grade"></span></p>
+        </div>
+        <div class="lightbox-desc" id="lb-desc"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo" data-fr="Club ATC Montréal" data-en="ATC Club Montréal">Club ATC Montréal</div>
+      <nav class="footer-nav" aria-label="Liens du pied de page">
+        <a href="index.html"   data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="gallery.html" data-fr="Galerie" data-en="Gallery">Galerie</a>
+        <a href="schools.html" data-fr="Écoles"  data-en="Schools">Écoles</a>
+        <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-copy" data-fr="© 2025 Club ATC Montréal — Tous droits réservés" data-en="© 2025 ATC Club Montréal — All rights reserved">© 2025 Club ATC Montréal — Tous droits réservés</div>
+  </footer>
+
+  <button class="back-top" id="back-top" aria-label="Retour en haut de la page">&#8679;</button>
+  <script src="main.js"></script>
+</body>
+</html>

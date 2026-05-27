@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Club ATC Montréal</title>
+  <meta name="description" content="Contactez le Club ATC Montréal. Nous aimerions entendre parler de vous et de votre intérêt pour les cartes artistiques.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-badge" aria-hidden="true">ATC</div>
+        <span data-fr="Club ATC Montréal" data-en="ATC Club Montréal">Club ATC Montréal</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html"   data-page="home"    data-fr="Accueil" data-en="Home">Accueil</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="schools.html" data-page="schools" data-fr="Écoles"  data-en="Schools">Écoles</a></li>
+        <li><a href="contact.html" data-page="contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Changer de langue / Switch language">EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <header class="page-header">
+    <div class="container">
+      <h1 data-fr="Nous contacter" data-en="Get In Touch">Nous contacter</h1>
+      <p data-fr="Posez vos questions ou manifestez votre intérêt pour le Club ATC" data-en="Ask questions or express your interest in joining the ATC Club">Posez vos questions ou manifestez votre intérêt pour le Club ATC</p>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="container section">
+
+    <div class="contact-layout">
+
+      <!-- Left: Contact Info -->
+      <aside class="contact-sidebar">
+        <h2 data-fr="Nos coordonnées" data-en="Contact Info">Nos coordonnées</h2>
+
+        <div class="contact-row">
+          <div class="contact-icon" aria-hidden="true">✉️</div>
+          <div class="contact-row-text">
+            <strong data-fr="Courriel" data-en="Email">Courriel</strong>
+            <span><a href="mailto:bonjour@atcmontreal.org">bonjour@atcmontreal.org</a></span>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div class="contact-row-text">
+            <strong data-fr="Localisation" data-en="Location">Localisation</strong>
+            <span data-fr="Montréal, Québec, Canada" data-en="Montreal, Quebec, Canada">Montréal, Québec, Canada</span>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-icon" aria-hidden="true">📱</div>
+          <div class="contact-row-text">
+            <strong data-fr="Téléphone" data-en="Phone">Téléphone</strong>
+            <span><a href="tel:+14165551234">(416) 555-1234</a></span>
+          </div>
+        </div>
+
+        <h3 style="margin-top:2.5rem;font-size:1.15rem;" data-fr="Suivez-nous" data-en="Follow Us">Suivez-nous</h3>
+        <div class="social-row">
+          <button class="social-btn" aria-label="Instagram" title="Instagram">📷</button>
+          <button class="social-btn" aria-label="TikTok" title="TikTok">🎵</button>
+          <button class="social-btn" aria-label="Facebook" title="Facebook">f</button>
+          <button class="social-btn" aria-label="Pinterest" title="Pinterest">📌</button>
+        </div>
+
+        <div class="map-area" role="img" aria-label="Carte de Montréal">
+          <div class="map-pin">📍</div>
+          <p data-fr="Montréal, Québec" data-en="Montreal, Quebec">Montréal, Québec</p>
+        </div>
+      </aside>
+
+      <!-- Right: Contact Form -->
+      <section class="contact-form-section">
+        <form id="contact-form" class="form-card" novalidate>
+
+          <div class="form-group">
+            <label for="name" class="form-label">
+              <span data-fr="Nom" data-en="Name">Nom</span>
+              <span class="req">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              data-fr-placeholder="Jean Dupont"
+              data-en-placeholder="John Smith"
+              placeholder="Jean Dupont"
+              required
+            >
+            <div class="form-err" id="name-err"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">
+              <span data-fr="Courriel" data-en="Email">Courriel</span>
+              <span class="req">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              data-fr-placeholder="votre.email@exemple.com"
+              data-en-placeholder="your.email@example.com"
+              placeholder="votre.email@exemple.com"
+              required
+            >
+            <div class="form-err" id="email-err"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="school" class="form-label">
+              <span data-fr="École / Organisation" data-en="School / Organization">École / Organisation</span>
+              <span class="req">*</span>
+            </label>
+            <select id="school" class="form-control" required>
+              <option value="">
+                -- <span data-fr="Choisir une école" data-en="Select a school">Choisir une école</span> --
+              </option>
+              <option value="jeanne-mance" data-fr="École sec. Jeanne-Mance" data-en="Jeanne-Mance Secondary">École sec. Jeanne-Mance</option>
+              <option value="mont-royal" data-fr="Collège Mont-Royal" data-en="Collège Mont-Royal">Collège Mont-Royal</option>
+              <option value="pierre-laporte" data-fr="École sec. Pierre-Laporte" data-en="Pierre-Laporte Secondary">École sec. Pierre-Laporte</option>
+              <option value="northview" data-fr="Northview Heights Secondary" data-en="Northview Heights Secondary">Northview Heights Secondary</option>
+              <option value="edouard-montpetit" data-fr="Éc. sec. Édouard-Montpetit" data-en="Édouard-Montpetit Secondary">Éc. sec. Édouard-Montpetit</option>
+              <option value="west-island" data-fr="West Island College" data-en="West Island College">West Island College</option>
+              <option value="other" data-fr="Autre école" data-en="Other school">Autre école</option>
+            </select>
+            <div class="form-err" id="school-err"></div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">
+              <span data-fr="Message" data-en="Message">Message</span>
+              <span class="req">*</span>
+            </label>
+            <textarea
+              id="message"
+              class="form-control"
+              data-fr-placeholder="Dites-nous comment vous avez entendu parler de nous et ce qui vous intéresse..."
+              data-en-placeholder="Tell us how you heard about us and what interests you..."
+              placeholder="Dites-nous comment vous avez entendu parler de nous et ce qui vous intéresse..."
+              required
+            ></textarea>
+            <div class="form-err" id="message-err"></div>
+          </div>
+
+          <button type="submit" class="form-submit" data-fr="Envoyer mon message" data-en="Send My Message">Envoyer mon message</button>
+
+        </form>
+
+        <!-- Success Message -->
+        <div id="form-success" class="form-success">
+          <div class="success-icon">✓</div>
+          <h3 data-fr="Merci!" data-en="Thank you!">Merci!</h3>
+          <p data-fr="Nous avons bien reçu votre message. Nous vous répondrons bientôt." data-en="We received your message. We'll get back to you soon.">Nous avons bien reçu votre message. Nous vous répondrons bientôt.</p>
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo" data-fr="Club ATC Montréal" data-en="ATC Club Montréal">Club ATC Montréal</div>
+      <nav class="footer-nav" aria-label="Liens du pied de page">
+        <a href="index.html"   data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="gallery.html" data-fr="Galerie" data-en="Gallery">Galerie</a>
+        <a href="schools.html" data-fr="Écoles"  data-en="Schools">Écoles</a>
+        <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-copy" data-fr="© 2025 Club ATC Montréal — Tous droits réservés" data-en="© 2025 ATC Club Montréal — All rights reserved">© 2025 Club ATC Montréal — Tous droits réservés</div>
+  </footer>
+
+  <button class="back-top" id="back-top" aria-label="Retour en haut de la page">&#8679;</button>
+  <script src="main.js"></script>
+</body>
+</html>

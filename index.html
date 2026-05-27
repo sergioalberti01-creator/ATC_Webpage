@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club ATC Montréal — Accueil</title>
+  <meta name="description" content="Le Club ATC Montréal réunit des élèves de différentes écoles pour créer et échanger des cartes artistiques miniatures faites à la main.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-badge" aria-hidden="true">ATC</div>
+        <span data-fr="Club ATC Montréal" data-en="ATC Club Montréal">Club ATC Montréal</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html"   data-page="home"    data-fr="Accueil" data-en="Home">Accueil</a></li>
+        <li><a href="gallery.html" data-page="gallery" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="schools.html" data-page="schools" data-fr="Écoles"  data-en="Schools">Écoles</a></li>
+        <li><a href="contact.html" data-page="contact" data-fr="Contact" data-en="Contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="lang-toggle" aria-label="Changer de langue / Switch language">EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1 data-fr="Club ATC Montréal" data-en="ATC Club Montréal">Club ATC Montréal</h1>
+        <p class="hero-tagline" data-fr="Des cartes créées avec cœur" data-en="Cards made with heart">Des cartes créées avec cœur</p>
+        <p class="hero-desc" data-fr="Des élèves de toute la région montréalaise se rassemblent pour créer et échanger des cartes artistiques miniatures. Chaque carte est unique, faite à la main, pleine de créativité." data-en="Students from across the Montréal region come together to create and trade miniature art cards. Each card is unique, handmade, and full of creativity.">Des élèves de toute la région montréalaise se rassemblent pour créer et échanger des cartes artistiques miniatures. Chaque carte est unique, faite à la main, pleine de créativité.</p>
+        <a href="gallery.html" class="btn btn-primary" data-fr="Voir la galerie" data-en="View Gallery">Voir la galerie</a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card"></div>
+        <div class="hero-card"></div>
+        <div class="hero-card"></div>
+        <div class="hero-card"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHAT IS AN ATC ========== -->
+  <section class="section atc-section">
+    <div class="container">
+      <h2 class="section-title" data-fr="Qu'est-ce qu'une ATC?" data-en="What Is an ATC?">Qu'est-ce qu'une ATC?</h2>
+      <p class="section-sub" data-fr="Artist Trading Card — une mini œuvre d'art à échanger" data-en="Artist Trading Card — a miniature artwork to trade">Artist Trading Card — une mini œuvre d'art à échanger</p>
+      <div class="atc-grid">
+        <div class="atc-text">
+          <p data-fr="Une ATC (Artist Trading Card) est une petite œuvre d'art aux dimensions d'une carte de baseball standard : 2,5 × 3,5 pouces (6,35 × 8,9 cm). Ces cartes ne se vendent jamais — elles s'échangent seulement! C'est la règle d'or du mouvement ATC dans le monde entier." data-en="An ATC (Artist Trading Card) is a small work of art measuring exactly 2.5 × 3.5 inches (6.35 × 8.9 cm) — the size of a standard baseball card. These cards are never sold — they are only traded! That is the golden rule of the ATC movement worldwide.">Une ATC (Artist Trading Card) est une petite œuvre d'art aux dimensions d'une carte de baseball standard : 2,5 × 3,5 pouces (6,35 × 8,9 cm). Ces cartes ne se vendent jamais — elles s'échangent seulement! C'est la règle d'or du mouvement ATC dans le monde entier.</p>
+          <p data-fr="Au Club ATC Montréal, des élèves d'écoles secondaires de la région créent leurs propres cartes uniques, puis les échangent lors de rencontres inter-écoles. Chaque échange crée une connexion artistique entre deux élèves." data-en="At ATC Club Montréal, secondary school students from across the region create their own unique cards, then trade them at inter-school gatherings. Each trade creates an artistic connection between two students.">Au Club ATC Montréal, des élèves d'écoles secondaires de la région créent leurs propres cartes uniques, puis les échangent lors de rencontres inter-écoles. Chaque échange crée une connexion artistique entre deux élèves.</p>
+        </div>
+        <div class="atc-badge" aria-label="Taille officielle d'une ATC">
+          <div class="atc-size">2.5"<small data-fr="× 3.5 pouces" data-en="× 3.5 inches">× 3.5 pouces</small></div>
+          <p style="margin-top:1.1rem;font-family:var(--font-head);font-size:1rem;color:var(--text);" data-fr="La taille officielle d'une ATC" data-en="The official ATC size">La taille officielle d'une ATC</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section" style="background-color:#fff;">
+    <div class="container">
+      <h2 class="section-title" data-fr="Comment ça marche?" data-en="How Does It Work?">Comment ça marche?</h2>
+      <p class="section-sub" data-fr="Trois étapes pour rejoindre le mouvement" data-en="Three steps to join the movement">Trois étapes pour rejoindre le mouvement</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3 data-fr="Crée" data-en="Create">Crée</h3>
+          <p data-fr="Exprime ta créativité sur une carte de 2,5 × 3,5 po. Utilise n'importe quel médium : peinture, dessin, collage, aquarelle, broderie, techniques mixtes…" data-en="Express your creativity on a 2.5 × 3.5 in. card. Use any medium: paint, drawing, collage, watercolor, embroidery, mixed media…">Exprime ta créativité sur une carte de 2,5 × 3,5 po. Utilise n'importe quel médium : peinture, dessin, collage, aquarelle, broderie, techniques mixtes…</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3 data-fr="Échange" data-en="Trade">Échange</h3>
+          <p data-fr="Lors des rencontres inter-écoles, échange ta carte avec d'autres élèves artistes. Souviens-toi : les ATC ne se vendent jamais, elles s'échangent!" data-en="At inter-school gatherings, trade your card with other student artists. Remember: ATCs are never sold, only traded!">Lors des rencontres inter-écoles, échange ta carte avec d'autres élèves artistes. Souviens-toi : les ATC ne se vendent jamais, elles s'échangent!</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3 data-fr="Connecte" data-en="Connect">Connecte</h3>
+          <p data-fr="Construis ta collection et un réseau d'artistes. Chaque carte reçue est une fenêtre sur la créativité unique de quelqu'un d'autre." data-en="Build your collection and a network of artists. Each card you receive is a window into someone else's unique creativity.">Construis ta collection et un réseau d'artistes. Chaque carte reçue est une fenêtre sur la créativité unique de quelqu'un d'autre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED CARDS ========== -->
+  <section class="section featured-section">
+    <div class="container">
+      <h2 class="section-title" data-fr="Cartes en vedette" data-en="Featured Cards">Cartes en vedette</h2>
+      <p class="section-sub" data-fr="Un aperçu de la créativité de nos élèves artistes" data-en="A glimpse of our student artists' creativity">Un aperçu de la créativité de nos élèves artistes</p>
+      <div class="cards-scroll" aria-label="Défilement des cartes en vedette">
+        <div class="feat-card">
+          <div class="feat-card-art" style="background:linear-gradient(135deg,#ff9a9e,#fecfef,#ffecd2);" aria-hidden="true"></div>
+          <div class="feat-card-label" data-fr="Coucher de soleil" data-en="Sunset">Coucher de soleil</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-card-art" style="background:linear-gradient(135deg,#4facfe,#00f2fe);" aria-hidden="true"></div>
+          <div class="feat-card-label" data-fr="Océan de rêves" data-en="Ocean of Dreams">Océan de rêves</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-card-art" style="background:linear-gradient(135deg,#56ab2f,#a8e063);" aria-hidden="true"></div>
+          <div class="feat-card-label" data-fr="Jardin imaginaire" data-en="Imaginary Garden">Jardin imaginaire</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-card-art" style="background:linear-gradient(135deg,#f7971e,#ffd200);" aria-hidden="true"></div>
+          <div class="feat-card-label" data-fr="Automne doré" data-en="Golden Autumn">Automne doré</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-card-art" style="background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);" aria-hidden="true"></div>
+          <div class="feat-card-label" data-fr="Ville nocturne" data-en="Night City">Ville nocturne</div>
+        </div>
+        <div class="feat-card">
+          <div class="feat-card-art" style="background:linear-gradient(135deg,#fd79a8,#a29bfe,#74b9ff);" aria-hidden="true"></div>
+          <div class="feat-card-label" data-fr="Oiseau tropical" data-en="Tropical Bird">Oiseau tropical</div>
+        </div>
+      </div>
+      <div class="featured-cta">
+        <a href="gallery.html" class="btn btn-ghost" data-fr="Voir toute la galerie →" data-en="See full gallery →">Voir toute la galerie →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo" data-fr="Club ATC Montréal" data-en="ATC Club Montréal">Club ATC Montréal</div>
+      <nav class="footer-nav" aria-label="Liens du pied de page">
+        <a href="index.html"   data-fr="Accueil" data-en="Home">Accueil</a>
+        <a href="gallery.html" data-fr="Galerie" data-en="Gallery">Galerie</a>
+        <a href="schools.html" data-fr="Écoles"  data-en="Schools">Écoles</a>
+        <a href="contact.html" data-fr="Contact" data-en="Contact">Contact</a>
+      </nav>
+    </div>
+    <div class="footer-copy" data-fr="© 2025 Club ATC Montréal — Tous droits réservés" data-en="© 2025 ATC Club Montréal — All rights reserved">© 2025 Club ATC Montréal — Tous droits réservés</div>
+  </footer>
+
+  <button class="back-top" id="back-top" aria-label="Retour en haut de la page">&#8679;</button>
+  <script src="main.js"></script>
+</body>
+</html>
